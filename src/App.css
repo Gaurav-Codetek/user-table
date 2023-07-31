@@ -1,0 +1,488 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  background-color: aqua;
+}
+
+.side-nav{
+  padding:0px 20px 0px 20px;
+  border-right: 1px solid #cfcfcf;
+  width: 55px;
+  height: 100%;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  background-color: #FFF;
+}
+
+img.logo{
+  margin: 20px 0px 0px 0px;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+
+img.security{
+  margin-bottom: 1rem;
+  background: linear-gradient(225deg,#5DE0E6, #005FDF );
+  border-radius: 10px;
+}
+
+img.hash{
+  padding: 10px;
+  margin-bottom: 18rem;
+}
+
+img.setting{
+  padding: 10px;
+}
+
+
+
+/*-------------------------------------------------------------------SideNavbar---------*/
+
+/*-------------------------------------------------------------------ProfileBar---------*/
+.profile-bar{
+  border-bottom: 1px solid #cfcfcf;
+  height: 70px;
+  background-color: #FFF;
+  position: relative;
+  z-index: 2;
+
+}
+
+.tab-phone{
+  display: flex;
+}
+
+.tab-phone img{
+  border-radius: 50%;
+  padding: 5px;
+}
+
+img.top-logo{
+  margin-right: 40px;
+}
+
+button.profile{
+  float: right;
+  display: flex;
+  border: none;
+  margin:5px 20px 0px 20px;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+button.profile img{
+  border-radius: 50%;
+}
+
+button.profile p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin-left: 10px;
+}
+
+button.profile b{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+p.downArrow{
+  transform: rotate(45deg);
+  margin: auto;
+}
+
+.innerProfileNeg{
+  display: none;
+}
+
+.innerProfile{
+  position: absolute;
+  top: 4.3rem;
+  right: 1.5rem;
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+}
+
+@keyframes slideIn{
+  from{
+    top: 0;
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+.innerProfile ul{
+  background-color: #f6f6f6;
+  border-radius: 13px;
+  list-style: none;
+  padding: 20px 60px 20px 20px;
+  height: 100px;
+}
+
+.innerProfile a{
+  text-decoration: none;
+  color: #4f4e4e;
+  font-weight: 500;
+}
+
+.innerProfile li{
+  padding: 0px 0px 8px 0px;
+}
+
+.innerProfile li:hover a{
+  color: #044499;
+}
+
+.close p{
+  width: auto;
+  background-color: #c9c9c9;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 900;
+  color: #343434;
+  padding: 3px 5px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.tab-phone{
+  display: none;
+}
+
+/*----------------------------------------------------------------ProfileBar-------------*/
+
+/*----------------------------------------------------------------HoriNavbar-------------*/
+
+.bg{
+  background-color: #5b787d1c;
+  padding-bottom: 40px;
+}
+nav{
+  margin:0px 0px 0px 140px;
+  padding: 10px;
+  background-color: #FFF;
+  border-radius: 7px;
+  width: fit-content;
+}
+
+nav a{
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 7px;
+  color: #343434;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px;
+}
+
+nav a:hover{
+  background: linear-gradient(225deg,#5DE0E6, #005FDF );
+  color: #FFF;
+}
+
+.navbar{
+  margin-top:0px ;
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.active{
+  background: linear-gradient(225deg, #5DE0E6, #005FDF);
+  color: #FFF;
+}
+
+img.refresh{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+button.download{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: #FFF;
+  border: none;
+  box-shadow: 0px 3px 10px 0px #e7e7e7;
+  text-align: center;
+}
+
+button.download img{
+  margin: auto;
+}
+
+button.download p{
+  font-size: 16px;
+  padding: 3px;
+  margin-left: 5px;
+}
+
+input[type=text]{
+  font-size: 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 7px;
+  margin-left: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 40px;
+  position: absolute;
+  top: 6.7rem;
+  z-index: 5;
+}
+input:focus{
+  outline: none;
+}
+
+input[type=text]::placeholder{
+  color: #9c9c9c;
+}
+
+.searchList{
+  position: absolute;
+  background-color: #FFF;
+  right: 16rem;
+  top: 8rem;
+  max-height: 200px;
+  overflow-y: scroll;
+  scroll-snap-type: unset;
+  width: 250px;
+  padding-top: 20px;
+}
+
+.searchList ul{
+  list-style: none;
+  padding: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.table{
+  margin-bottom: 40px;
+  margin-left: 140px;
+  text-align: center;
+  width: fit-content;
+  background-color: #FFF;
+  padding: 10px 0px;
+  border-radius: 13px;
+  box-shadow: 0px 3px 10px 0px #cfcfcf;
+}
+
+table{
+  background-color: #FFF;
+  border-collapse: collapse;
+}
+
+th{
+  width: 25%;
+  padding: 0px 185px 10px 10px;
+  text-align: left;
+}
+
+tr{
+  text-align: left;
+}
+
+thead tr{
+  background-color: white;
+  color: rgb(75, 75, 75);
+}
+
+td{
+  padding: 15px 10px;
+  font-size: 15px;
+  color: #737373;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #5b787d0c;
+}
+
+@media only screen and (max-width: 768px){
+  
+  th{
+    padding-right: 30px;
+  }
+
+  .side-nav{
+    padding: 0px 7px;
+    width: 45px;
+  }
+
+  .side-nav img{
+    height: 40px;
+    width: 40px;
+  }
+
+  img.hash{
+    padding-top: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  img.setting{
+    padding-top: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  nav{
+    margin-left: 15px;
+  }
+
+  nav a{
+    font-size: 14px;
+  }
+
+  .navbar{
+    padding: 20px 0px;
+  }
+
+  .side-nav{
+    display: none;
+  }
+
+  button.download{
+    padding: 7px 17px;
+  }
+
+  button.download p{
+    font-size: 13px;
+  }
+
+  button.download img{
+    height: 15px;
+    width: 15px;
+  }
+
+  input[type=text]{
+    padding-right: 0px;
+    padding-left:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-left: 65px;
+    top: 4.9rem;
+    right: 1rem;
+    z-index: 1;
+  }
+
+  .table{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+
+  tbody tr td{
+    width: auto;
+  }
+
+  button.profile{
+    margin-top: -48px;
+  }
+
+  button.profile img{
+    height: 30px;
+    width: 30px;
+  }
+
+  button.profile b{
+    font-size: 14px;
+  }
+
+  button.profile p{
+    font-size: 10px;
+  }
+
+  .innerProfile{
+    top: 3.5rem;
+  }
+
+  .innerProfile ul{
+    padding-right: 40px;
+  }
+
+  .innerProfile a{
+    font-size: 13px;
+  }
+
+  .tab-phone img{
+    height: 40px;
+    width: 40px;
+  }
+
+  .profile-bar{
+    height: 54px;
+  }
+  
+}
+
+@media only screen and (max-width: 400px){
+  nav{
+    position: absolute;
+    top: 4rem;
+    padding: 8px;
+  }
+
+  nav a{
+    padding: 7px;
+  }
+  .navbar{
+    padding-top: 80px;
+  }
+
+  th{
+    font-size: 12px;
+    padding-right: 0px;
+  }
+
+  tbody td{
+    font-size: 8px;
+  }
+
+  input[type=text]{
+    padding: 8px 8px 8px 5px;
+    font-size: 12px;
+    top: 8.6rem;
+  }
+
+  button.profile{
+    margin-top: -52px;
+  }
+
+  .tab-phone{
+    display: block;
+  }
+}
+
