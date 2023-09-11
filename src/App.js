@@ -3,6 +3,7 @@ import './App.css';
 import SideNavbar from './Components/SideNavbar';
 import ProfileBar from './Components/ProfileBar';
 import HoriNavbbar from './Components/HoriNavbbar';
+import Table from './Components/Table';
 
 function App() {
   return (

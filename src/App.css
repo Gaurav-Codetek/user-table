@@ -22,24 +22,26 @@ img.logo{
   margin: 20px 0px 0px 0px;
   border-radius: 50%;
   margin-bottom: 2.5rem;
+  cursor: pointer;
 }
 
 img.security{
   margin-bottom: 1rem;
   background: linear-gradient(225deg,#5DE0E6, #005FDF );
   border-radius: 10px;
+  cursor: pointer;
 }
 
 img.hash{
   padding: 10px;
   margin-bottom: 18rem;
+  cursor: pointer;
 }
 
 img.setting{
   padding: 10px;
+  cursor: pointer;
 }
-
-
 
 /*-------------------------------------------------------------------SideNavbar---------*/
 
@@ -205,6 +207,7 @@ img.refresh{
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 button.download{
@@ -218,6 +221,7 @@ button.download{
   border: none;
   box-shadow: 0px 3px 10px 0px #e7e7e7;
   text-align: center;
+  cursor: pointer;
 }
 
 button.download img{
@@ -327,6 +331,81 @@ td{
 
 tbody tr:nth-child(odd){
   background-color: #5b787d0c;
+}
+
+.select{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  width: 13%;
+  padding: 13px 10px;
+  position: absolute;
+  right: 1rem;
+  top: 6.8rem;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+p.placeholder{
+  width: 90%;
+  text-align: left;
+}
+
+.select:hover{
+  border: 1px solid black;
+}
+
+.select p {
+  color: #9c9c9c;
+}
+
+.sort-OptionNeg{
+  display: none;
+}
+
+.sort-Option ul{
+  display: block;
+  width: fit-content;
+  position: absolute;
+  right: 1rem;
+  top: 10rem;
+  background-color:#FFF;
+  border: 1px solid #cfcfcf;
+  padding: 13px 0px ;
+  border-radius: 8px;
+  text-align: left;
+  list-style: none;
+  transition: border 0.3s;
+}
+
+.sort-Option ul:hover{
+  border: 1px solid black;
+}
+
+.sort-Option ul li{
+  padding: 15px 93px 15px 15px;
+  margin: 5px 0px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.sort-Option ul li:hover{
+  background-color: rgb(249, 249, 249);
+  cursor: pointer;
+  color: #044499;
+}
+
+.dropdown0deg{
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}
+
+.dropdown180deg{
+  transform: rotate(180deg);
+  
+  transition: all 0.3s;
 }
 
 @media only screen and (max-width: 768px){
